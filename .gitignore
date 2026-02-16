@@ -1,0 +1,9 @@
+dataset/train/images/*.png
+dataset/train/labels/*.png
+dataset/test/images/*.png
+dataset/test/labels/*.png
+mode_v1/
+*.pth
+*.csv
+*.asv
+*.txt
