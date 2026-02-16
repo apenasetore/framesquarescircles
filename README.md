@@ -49,7 +49,8 @@ The task is to segment a specific square object from a scene where it may be par
 
 ## Architecture
 
-SQUNET is UNNET encoder–decoder based on the U-Net architecture from (https://arxiv.[ https://doi.org/10.1016/j.neunet.2020.05.005](https://arxiv.org/pdf/2102.05229):
+SQUNET is UNNET encoder–decoder based on the U-Net architecture from https://arxiv.org/abs/2102.05229:
+
 
 - **Encoder**: 7 stacked `ENCODERBLOCK` modules. Each block applies 3D convolutions across the temporal dimension, followed by a `FeatureFusionOperation` that collapses the frame axis into a 2D skip connection via a `Conv3d(kernel=(T,1,1))` and bilinear interpolation.
 - **Decoder**: 6 stacked `DECODERBLOCK` modules. Each block upsamples, then fuses the 2D skip connection using a `ChannelAttentionBlock` (global average pooling → channel-wise sigmoid gating), followed by a residual 2D conv block.
