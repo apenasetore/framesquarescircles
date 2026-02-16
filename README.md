@@ -1,5 +1,6 @@
 # Frame Sequence Dataset - README
 #I changes something here, try to pull it first sis, other easter egg
+# i don't know what i am doing 
 "Shajimon recives cheese attack! It’s super effective!."
                                             —Dex, Poke
 ## Overview
