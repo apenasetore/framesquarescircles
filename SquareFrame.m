@@ -10,7 +10,7 @@
 % This is a script that creates a dataset with squares, with some covered
 % parts, it is intend to mimimc a dataset where there is a target structure
 % to be segmented, but there are parts of this structures that are covered
-%
+% oui oui baguette, 
 %
 %==PARAMETERS================================================
 

@@ -1,12 +1,19 @@
 # Frame Sequence Dataset - README
 
+"Shajimon recives cheese attack! It’s super effective!."
+                                            —Dex, Poke
 ## Overview
 ## ._.
 
 This dataset class loads sequences of 4 consecutive frames along with their corresponding label for training models on temporal/sequential image data.
 
+
+
 > **Research software** — Embedded Systems & Instrumentation Department, ESIGELEC, France.  
 > Redistribution is forbidden under any circumstances.
+> Copyright © 2026 OQUETUQUETAMOLECORPORATIONS
+
+
 
 ---
 
