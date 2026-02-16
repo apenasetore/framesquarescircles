@@ -16,7 +16,6 @@
                 "-model_file", "./model/model.pth",
                 "-log_file", "./logs/logs.txt",
                 "-num_epoch", "2",
-                "-nfold", "5"
             ]
         },
         {

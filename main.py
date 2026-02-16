@@ -1,4 +1,5 @@
 import os
+import sys
 import time
 import argparse
 import matplotlib.pyplot as plt
@@ -41,7 +42,7 @@ def train(args):
 	num_batches += np.ceil(len(test_data)/num_batch).astype('int')
 
 	# create model
-	model = SVSUNET(in_c=1,nfilter=8).to(DEVICE)
+	model = SQUNET(in_c=1,nfilter=8).to(DEVICE)
 
 	train_loader = DataLoader(train_data, batch_size=num_batch, num_workers=num_workers, shuffle=True) 
 	test_loader = DataLoader(test_data, batch_size=num_batch, num_workers=num_workers)
@@ -282,7 +283,7 @@ def format_final_image(img):
 #----------------------------------------------------------
 if __name__ == "__main__":
 
-	print('\n SQUNET')
+	print('\n SQUNET ._.')
 
 	parser = argparse.ArgumentParser(formatter_class=lambda prog: argparse.HelpFormatter(prog, max_help_position=32), epilog='\nFor more information, please check README.md\n', exit_on_error=False)
 	parser._optionals.title = 'command arguments'
