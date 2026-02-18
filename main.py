@@ -20,7 +20,6 @@ learning_rate = 1e-3
 min_learning_rate = 1e-5
 lambda1 = lambda epochs: max(0.975 ** epochs, min_learning_rate/learning_rate)
 save_frequency = 10
-nfilter = 64
 load_first = False
 alpha = 1.1
 beta = 1
@@ -163,7 +162,7 @@ def test(args):
 	test_data = FramePictures(args.test_path, noise=augment_noise, nfold=args.nfold, load_first=load_first)
 
 	num_batches = np.ceil(len(test_data)/num_batch).astype('int')
-	model = SQUNET(in_c=1,nfilter=8).to(DEVICE)
+	model = SQUNET(in_c=1,nfilter=nfilter).to(DEVICE)
 
 	# load model
 	checkpoint = torch.load(args.model_file, weights_only=True)
