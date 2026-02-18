@@ -20,6 +20,7 @@ d = 512;
 imgIdx = 1;
 %Change path here to train/test to save the files.
 file_path  ="./dataset/test";
+% file_path  ="./dataset/train";
 numImages = 20; 
 numSquares = 5;
 maxNumCircles = 3;

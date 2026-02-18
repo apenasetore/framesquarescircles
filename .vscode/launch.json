@@ -11,11 +11,11 @@
             "console": "integratedTerminal",
             "args": [
                 "-job", "TRAIN",
-                "-data_path", "./dataset/train",
-                "-test_path", "./dataset/test",
-                "-model_file", "./model/model.pth",
-                "-log_file", "./logs/logs.txt",
-                "-num_epoch", "2",
+                "-data_path", "${workspaceFolder}/dataset/train",
+                "-test_path", "${workspaceFolder}/dataset/test",
+                "-model_file", "${workspaceFolder}/logs/model.pth",
+                "-log_file", "${workspaceFolder}/logs/logs.csv",
+                "-num_epoch", "100",
             ]
         },
         {
@@ -26,9 +26,9 @@
             "console": "integratedTerminal",
             "args": [
                 "-job", "TEST",
-                "-test_path", "./dataset/test",
-                "-results_path", "./results",
-                "-model_file", "./model_v1/model.pth",
+                "-test_path", "${workspaceFolder}/dataset/test",
+                "-results_path", "${workspaceFolder}/results",
+                "-model_file", "${workspaceFolder}/logs/model.pth",
             ]
         }
 
